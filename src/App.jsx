@@ -68,8 +68,10 @@ const App = () => {
             {bookData.map((data, index) => (
               <li key={index}>
                 <div className="book-download">
-                  <h3>
-                    {index+1} <a href={data.file_link} target="_blank" rel="noopener noreferrer">
+                <h3>
+                {index+1}.&nbsp;&nbsp;{data.file_name}
+                  </h3>
+                  <h3><a href={data.file_link} target="_blank" rel="noopener noreferrer">
                       Download
                     </a>
                   </h3>
